@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background: #6E439C;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4f3876), to(#6e439c)) fixed;
+  background-image: -webkit-linear-gradient(#4f3876, #6e439c) fixed;
+  background-image: -o-linear-gradient(#4f3876, #6e439c) fixed;
+  background-image: linear-gradient(#4f3876, #6e439c) fixed;
+  font: normal 14px Tahoma, Helvetica, sans-serif;
+}
+.header {
+  padding: 0.5em 1em;
+  color: #88b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #47456A;
+  font-size: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header .logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.header .logo a {
+  text-decoration: none;
+  color: inherit;
+}
+.header .menu a {
+  text-decoration: inherit;
+  color: inherit;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s;
+}
+.header .menu a:hover {
+  color: #ccc;
+}
+.header sup {
+  font-size: 0.4em;
+  margin-left: 3px;
+  vertical-align: baseline;
+  position: relative;
+  top: -1.4em;
+}
+.publish {
+  background: #31304F;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3e3e5e), to(#272741));
+  background-image: -webkit-linear-gradient(#3e3e5e, #272741);
+  background-image: -o-linear-gradient(#3e3e5e, #272741);
+  background-image: linear-gradient(#3e3e5e, #272741);
+  padding: 0.7em;
+  position: relative;
+}
+.publish textarea {
+  font: inherit;
+  font-size: 1em;
+  padding: 0.5em;
+  color: #696697;
+  background: transparent;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 2.5em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 5px;
+  border: 1px solid #464569;
+  border-color: transparent;
+  width: 100%;
+  -webkit-transition: min-height 1s, border-color 1s;
+  -o-transition: min-height 1s, border-color 1s;
+  transition: min-height 1s, border-color 1s;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+  resize: none;
+}
+.publish textarea:focus {
+  outline: none;
+  color: #C6756B;
+  min-height: 100px;
+  border-color: #464569;
+}
+.publish textarea::-webkit-input-placeholder {
+  color: #9592CC;
+}
+.publish button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  font-size: 0;
+  bottom: 0;
+  border-radius: 50%;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background: #DD6D87;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+}
+.publish textarea:focus + button {
+  width: 40px;
+  height: 40px;
+  font-size: 0.7em;
+  bottom: -10px;
+  -webkit-box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
+}
+.publish:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.content {
+  padding: 2em 1em;
+}
+.content .box {
+  background: #fff;
+  border-radius: 1em;
+  background: #f0f0f0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dddddd));
+  background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+  background-image: -o-linear-gradient(#ffffff, #dddddd);
+  background-image: linear-gradient(#ffffff, #dddddd);
+  -webkit-box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.2), 0 0.5em 2em rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.2), 0 0.5em 2em rgba(0, 0, 0, 0.4);
+  padding: 1em;
+}
+.content .post {
+  padding: 2em;
+  margin-left: 25px;
+  position: relative;
+}
+.content .post + .post {
+  margin-top: 3em;
+}
+.content .post a {
+  text-decoration: inherit;
+  color: inherit;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.content .post a:hover {
+  color: #444;
+}
+.content .post .text,
+.content .post .reply {
+  color: #555;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-left: 10px;
+}
+.content .post .reply {
+  margin-top: 10px;
+  text-align: right;
+  color: #888;
+}
+.content .post .meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 1.5em;
+  color: #777;
+  font-size: 0.8em;
+}
+.content .post .meta .date,
+.content .post .meta .permalink {
+  margin-left: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.content .post .meta .links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  text-align: right;
+}
+.content .post .meta a + a {
+  margin-left: 0.5em;
+}
+.content .post .avatar {
+  width: 50px;
+  position: absolute;
+  left: -25px;
+  top: -15px;
+  bottom: 0;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.5);
+}
+.content .post .avatar img {
+  float: right;
+}
+.username {
+  text-decoration: inherit;
+  color: inherit;
+  font-weight: bold;
+}
+.navigation {
+  margin: 50px;
+}
+.navigation .wrapper {
+  text-align: center;
+}
+.navigation .wrapper a {
+  text-decoration: inherit;
+  color: #ccc;
+}
+.navigation .wrapper a:hover {
+  color: #fff;
+}
+.navigation .wrapper a + a {
+  margin-left: 1em;
+}
+.wrapper {
+  max-width: 720px;
+  margin: auto;
+}
