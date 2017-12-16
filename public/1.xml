@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+              <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+              <channel>
+                 <title>Music's sound</title>
+                 <description>Healing of a broken soul</description>
+                 <link>http://music.khand.ml/</link>
+                 <category>Podcasting</category>
+                 <language>ru</language>
+                 <copyright>2017, Daniel Khan's playlist. Not more than.</copyright>
+                 <atom:link href="http://music.khand.ml/subscribe" rel="self" type="application/rss+xml" />
+                 <ttl>1</ttl>
+                 <image>
+                    <url>http://music.khand.ml/img/profile.jpg</url>
+                    <title>Music:</title>
+                    <link>http://music.khand.ml/</link>
+                 </image>
+                 <itunes:image href="http://music.khand.ml/img/profile.jpg"/>
+                 <itunes:author>Daniel Khan's playlist. Not more than.</itunes:author>
+                 <itunes:category text="Music"/>
+                 <itunes:explicit>no</itunes:explicit>
+                           <item>
+                              <title>Один в каное</title>
+                              <description>Човен</description>
+                              <link>http://music.khand.ml/music/0/001.mp3</link>
+                              <enclosure url="http://music.khand.ml/music/0/001.mp3" length="6645636" type="audio/mpeg" />
+                              <guid isPermaLink="false">001.mp3</guid>
+                              <pubDate>Sat, 9 Dec 2017 12:00:00 GMT</pubDate>
+                              <itunes:explicit>no</itunes:explicit>
+                           </item>
+               </channel>
+               </rss>

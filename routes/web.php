@@ -11,18 +11,28 @@
 |
 */
 
-Route::get('/wc', function () {
-    return view('welcome');
-});
+Route::get('/', 'TweetController@index');
 
-Route::get('/', 'PostController@index');
+Route::get('/post/id/{id}', 'TweetController@showById');
 
-Route::post('/create/', 'PostController@store');
+Route::get('/user/{id}', 'TweetController@showByUserId');
 
-Route::get('/post/id/{id}', 'PostController@showById');
+Route::get('/repost', 'TweetController@repost');
 
-Route::get('/user/{id}', 'PostController@showByUserId');
+Route::resources([
+    'post' => 'TweetController'
+]);
 
 Auth::routes();
 
+Route::post('/home', 'HomeController@uploadData');
+Route::put('/home', 'HomeController@uploadImage');
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

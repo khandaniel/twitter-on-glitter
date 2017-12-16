@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    @include('profile')
 
                 </div>
             </div>

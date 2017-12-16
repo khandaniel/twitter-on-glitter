@@ -20,7 +20,7 @@
                     <a href="{{ route('login') }}">Login</a>
                     <a href="{{ route('register') }}">Register</a>
                     @else
-                        <a>
+                        <a href="/home">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                         <a href="{{ route('logout') }}"
@@ -47,13 +47,5 @@
     @yield('post')
 
 </div>
-
-<div class="navigation">
-    <div class="wrapper">
-        <a href="#">&larr;Previous Page</a>
-        <a href="#">Next Page&rarr;</a>
-    </div>
-</div>
-
 </body>
 </html>
